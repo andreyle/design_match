@@ -1,0 +1,66 @@
+/* CSS document */
+
+body {margin:0px; padding:0px;}
+
+/* ultimate reset */
+h1, h2, h3, h4, p {margin:0px; padding:0px; font-weight:normal;}
+ul, li {margin:0px; padding:0px; list-style-type:none;}
+a img {border:0px;}
+a {text-decoration:underline;}
+a:hover {text-decoration:none;}
+table {border-collapse:collapse;}
+td {vertical-align:top;}
+
+/* Universal styles */
+.float_left {float:left;}
+.float_right {float:right;}
+.left {text-align:left;}
+.right {text-align:right;}
+.center {text-align:center;}
+.clear {display:block; height:0px; overflow:hidden; clear:both;}
+.pav_5 {padding-top:5px; padding-bottom:5px;}
+.pav_10 {padding-top:10px; padding-bottom:10px;}
+.pav_15 {padding-top:15px; padding-bottom:15px;}
+.pav_20 {padding-top:20px; padding-bottom:20px;}
+.pas_5 {padding-left:5px; padding-right:5px;}
+.pas_10 {padding-left:10px; padding-right:10px;}
+.pas_15 {padding-left:15px; padding-right:15px;}
+.pas_20 {padding-left:20px; padding-right:20px;}
+.block {display:block;}
+.span_block span {display:block;}
+.d_none {display:none;}
+/*.arrow_with_borders {width:0;height:0; border:12px dashed transparent; border-left:12px solid gray; border-right:12px solid gray;}*/
+
+.app_layout {width:520px; position:relative; margin:auto; color:#594B42; font-family:Georgia, Times New Roman, Arial; font-size:12px;}
+
+/* topper */
+.topper {margin:0 0 17px 0;}
+.topper .logo {height:35px; background:url(../images/logo.png) 100% 0 no-repeat;}
+.topper .slogan {height:42px; background:url(../images/topper_bg.png) 0 0 repeat-x; position:relative; text-align:center;}
+.topper .slogan i {display:block; width:41px; height:28px; background:url(../images/topper_arrow.png) 0 0 no-repeat; position:absolute; left:125px; top:-27px;}
+.topper .slogan .slogan_txt {display:inline-block; white-space:nowrap; height:21px; font-size:13px; text-transform:uppercase; line-height:28px; background:url(../images/slogan_bg.png) 0 0 no-repeat; margin:9px 0 0 0; float:left;}
+.topper .slogan .slogan_txt > div {height:21px; background:url(../images/slogan_bg.png) 100% 100% no-repeat; padding:0 39px;}
+
+/* centralization for slogan (compatible with IE) */
+.slogan_wrapper {width:100%; position:relative; overflow:hidden;}
+.slogan_wrapper > div {position:relative; left:50%; float:left;}
+.slogan_wrapper > div > div {position:relative; left:-50%;}
+
+/* content */
+.content {background:none #EDEAE2; padding:20px;}
+.content h1 {font-size:33px; padding:0 0 10px 0;}
+.content .img_wrapper {float:right;}
+.content .img_wrapper .btn {text-align:center;}
+.content .img_wrapper .btn a {display:inline-block; height:24px; line-height:24px; font-size:14px; text-transform:uppercase; padding:0 23px; text-decoration:none; color:#594B42; background:none #CFC5B1;}
+.content .img_wrapper .btn a img {margin-left:7px;}
+.content p {margin:0 280px 15px 0;}
+
+/* banners */
+.banners {height:158px; margin:20px 0 0 0;}
+.banners a {display:block; width:166px; height:158px; overflow:hidden; margin:0 0 0 11px; float:left;}
+.banners a:first-child {margin:0px;}
+
+/* footer */
+.footer {height:55px; padding:8px 0; border-top:1px solid #DEDBD9; border-bottom:1px solid #DEDBD9; margin:17px 0;}
+.footer .logo {float:right;}
+.footer table td {font-size:13px; height:57px; vertical-align:bottom;}
