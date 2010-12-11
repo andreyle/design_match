@@ -1,5 +1,5 @@
 var params = {
-	src: 'images/test.jpg',
+	src: 'images/other1.jpg',
 	position: 'center'
 };
 
@@ -15,10 +15,16 @@ function designMatch() {
 }
 function init() {
 	var currentCN = $('body').html();
+//	currentCN = prepareCurrent(currentCN);
 	$('body').html( currentCN + getHTML() );
 	currentCN = $('body').html();
 	$('body').html( currentCN + buildCSS() );
 	$('.designMatchWrapper img').remove();
+}
+function prepareCurrent(current) {
+	var cur = current;
+	current = "<div class=\"master_wrap\">"+cur+"</div>";
+	return current;
 }
 function getHTML() {
 	var DOM = new Array(
